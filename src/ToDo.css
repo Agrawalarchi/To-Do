@@ -1,0 +1,158 @@
+
+.ToDo-container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #b5d1ed;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+    padding-bottom: 3rem;
+}
+.todo-title {
+    color: rgb(44, 44, 143);
+    text-align: center;
+    margin-bottom: 50px;
+    text-decoration: underline;
+    font-size: 2rem;
+}
+.inputBox {
+    display: flex;
+    align-items: center;
+    background-color: rgb(239, 240, 240); 
+    border-radius: 50rem;
+    height: 2.8rem;
+    width:90%;  
+    box-sizing: border-box; 
+    margin-left: 1rem;
+}
+
+input {
+    color: black;
+    width: 75%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0 1rem;
+    font-size: 1rem;
+   }
+
+.inputBox button {
+    background-color:  #f56f22;
+    width: 25%;
+    color: white;
+    border: none;
+    height: 100%;
+    border-radius:50rem; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 0;
+}
+.inputBox button:hover {
+    background-color: #e1640b;
+}
+ 
+.task-heading {
+    text-align: left;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    color: rgb(19, 19, 63);
+}
+.empty-message {
+    font-style: italic;
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.task-list {
+    color: #333;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.todo-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 10px 10px 10px 25px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.todo-item::before {
+    content: "•";
+    position: absolute;
+    left: 10px;
+    top: 55%;
+    transform: translateY(-50%);
+    font-size: 25px;
+    color: #333;
+}
+
+.task-text {
+    margin-left: 10px;
+    font-size: 16px;
+    word-break: break-word;
+}
+
+
+.icon-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+
+.icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    transition: transform 0.2s ease;
+}
+
+.icon-button:hover {
+    transform: scale(1.1);
+}
+
+
+.icon {
+    color: #333; 
+}
+.updateAllButtons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+
+.updateAllButton {
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.updateAllButton:hover {
+    background-color: rgba(0, 123, 255, 0.1); 
+}
+
+.updateAllButton .MuiSvgIcon-root {        /*style icon of update all*/
+    color: #202e3d; 
+    font-size: 1.8rem;
+    transition: color 0.2s ease;
+}
+
+@media (min-width:765px){
+   .ToDo-container {
+   width: 25rem;
+   border-radius: 18px;
+   } 
+}
